@@ -8,7 +8,7 @@ To host your current workspace in Express, and then open in your default browser
 * Bring up Command Palette (`F1`, or `Ctrl+Shift+P` on Windows and Linux, or `Shift+CMD+P` on OSX)
 * Type or select "Express: Host current workspace and open in browser"
 
-When Express is up and ready, an icon will show up in the status bar. You can click on it to open your site in browser.
+When Express is up and ready, an icon will show up in the status bar ![Status bar item showing Express listening to port 80](https://raw.githubusercontent.com/compulim/vscode-express/master/statusbar.png). You can click on it to open your site in browser.
 
 ## Preferences
 
