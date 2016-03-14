@@ -7,6 +7,14 @@
   "engines": {
     "vscode": "^0.10.1"
   },
+  "icon": "icon.png",
+  "galleryBanner.color": "#0D5CAB",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/compulim/vscode-express.git"
+  },
+  "bugs": "https://github.com/compulim/vscode-express/issues/",
+  "homepage": "https://github.com/compulim/vscode-express/blob/master/README.md",
   "categories": [
     "Other"
   ],
