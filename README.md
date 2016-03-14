@@ -4,7 +4,7 @@
 ![Demo showing how Express extension works](https://raw.githubusercontent.com/compulim/vscode-express/master/demo.gif)
 
 ## Usage
-To host your current space in Express and then open in your default browser.
+To host your current workspace in Express, and then open in your default browser.
 * Bring up Command Palette (`F1`, or `Ctrl+Shift+P` on Windows and Linux, or `Shift+CMD+P` on OSX)
 * Type or select "Express: Host current workspace and open in browser"
 
