@@ -1,5 +1,5 @@
 # Express
-## Hosts your current workspace in Express
+Hosts your current workspace in Express with Visual Studio Code
 
 ![Demo showing how Express extension works](https://raw.githubusercontent.com/compulim/vscode-express/master/demo.gif)
 
@@ -8,7 +8,11 @@ To host your current workspace in Express, and then open in your default browser
 * Bring up Command Palette (`F1`, or `Ctrl+Shift+P` on Windows and Linux, or `Shift+CMD+P` on OSX)
 * Type or select "Express: Host current workspace and open in browser"
 
-By default, Express server will be hosted on port 80. You can configure it in preferences, along with other settings.
+When Express is up and ready, an icon will show up in the status bar. You can click on it to open your site in browser.
+
+## Preferences
+
+By default, the Express server is hosted on port 80. You can configure it to different port in preferences.
 
 ```js
 // Specifies the port number the Express server should listen to
