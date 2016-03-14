@@ -1,0 +1,68 @@
+{
+  "name": "vscode-express",
+  "displayName": "Express",
+  "description": "Hosts current workspace in Express",
+  "version": "0.0.1",
+  "publisher": "Compulim",
+  "engines": {
+    "vscode": "^0.10.1"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:express.hostWorkspace",
+    "onCommand:express.hostWorkspaceAndOpenInBrowser",
+    "onCommand:express.openInBrowser",
+    "onCommand:express.stopServer"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "express.hostWorkspace",
+        "title": "Express: Host current workspace"
+      },
+      {
+        "command": "express.hostWorkspaceAndOpenInBrowser",
+        "title": "Express: Host current workspace and open in browser"
+      },
+      {
+        "command": "express.openInBrowser",
+        "title": "Express: Open currently hosted website in browser"
+      },
+      {
+        "command": "express.stopServer",
+        "title": "Express: Stop server"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Express configuration",
+      "properties": {
+        "express.portNumber": {
+          "type": "number",
+          "default": 80,
+          "description": "Specifies the port number the Express server should listen to"
+        },
+        "express.omitInformationMessage": {
+          "type": "boolean",
+          "default": false,
+          "description": "Determines whether to omit informational messages"
+        },
+        "express.relativeRoot": {
+          "type": "string",
+          "default": null,
+          "description": "Specifies the path to be hosted on Express, relative to the workspace root"
+        }
+      }
+    }
+  },
+  "devDependencies": {
+    "vscode": "0.11.x"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "open": "0.0.5"
+  }
+}
