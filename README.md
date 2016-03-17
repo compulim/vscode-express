@@ -4,15 +4,25 @@ Hosts your current workspace in Express with Visual Studio Code
 ![Demo showing how Express extension works](https://raw.githubusercontent.com/compulim/vscode-express/master/demo.gif)
 
 ## Usage
-To host your current workspace in Express, and then open in your default browser.
+To host your current workspace in Express with default port number (80), and then open in your default browser.
 * Bring up Command Palette (`F1`, or `Ctrl+Shift+P` on Windows and Linux, or `Shift+CMD+P` on OSX)
 * Type or select "Express: Host current workspace and open in browser"
 
 When Express is up and ready, an icon will show up in the status bar ![Status bar item showing Express listening to port 80](https://raw.githubusercontent.com/compulim/vscode-express/master/statusbar.png). You can click on it to open your site in browser.
 
+## Commands
+| Command | Title |
+|---------|-------------|
+| `express.hostWorkspace(portNumber) ` | Express: Host current workspace |
+| `express.hostWorkspaceAndOpenInBrowser(portNumber) ` | Express: Host current workspace and open in browser |
+| `express.hostWorkspaceWithRandomPort ` | Express: Host current workspace with random port number |
+| `express.hostWorkspaceWithRandomPortAndOpenInBrowser ` | Express: Host current workspace with random port number and open in browser |
+| `express.openInBrowser` | Express: Open currently hosted website in browser |
+| `express.stopServer` | Express: Stop server |
+
 ## Preferences
 
-By default, the Express server is hosted on port 80. You can configure it to different port in preferences. Settings can be shared when overridden by workspace settings.
+By default, the Express server is hosted on port 80. You can configure it to different port in preferences.
 
 ```js
 // Specifies the port number the Express server should listen to
@@ -30,6 +40,8 @@ By default, the Express server is hosted on port 80. You can configure it to dif
 // Specifies the maximum port number to use for random port number
 "express.randomPortNumber.max": 8999,
 ```
+
+Tips: Settings can be shared across team when overridden by workspace settings and checked into source control.
 
 ## Change log
 * 0.0.2 (2016-03-16)
