@@ -12,7 +12,7 @@ When Express is up and ready, an icon will show up in the status bar ![Status ba
 
 ## Preferences
 
-By default, the Express server is hosted on port 80. You can configure it to different port in preferences.
+By default, the Express server is hosted on port 80. You can configure it to different port in preferences. Settings can be shared when overridden by workspace settings.
 
 ```js
 // Specifies the port number the Express server should listen to
@@ -23,9 +23,19 @@ By default, the Express server is hosted on port 80. You can configure it to dif
 
 // Specifies the path to be hosted on Express, relative to the workspace root
 "express.relativeRoot": null,
+
+// Specifies the minimum port number to use for random port number
+"express.randomPortNumber.min": 8000,
+
+// Specifies the maximum port number to use for random port number
+"express.randomPortNumber.max": 8999,
 ```
 
 ## Change log
+* 0.0.2 (2016-03-16)
+  * Support both pre-configured or random port number
+  * Call `vscode.commands.executeCommand('express.hostWorkspace', 8080)` to host on port 8080
+  * Automatically stop server when extension is being deactivated
 * 0.0.1 (2016-03-14): First public release
 
 ## Contributions

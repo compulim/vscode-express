@@ -21,6 +21,8 @@
   "activationEvents": [
     "onCommand:express.hostWorkspace",
     "onCommand:express.hostWorkspaceAndOpenInBrowser",
+    "onCommand:express.hostWorkspaceWithRandomPort",
+    "onCommand:express.hostWorkspaceWithRandomPortAndOpenInBrowser",
     "onCommand:express.openInBrowser",
     "onCommand:express.stopServer"
   ],
@@ -34,6 +36,14 @@
       {
         "command": "express.hostWorkspaceAndOpenInBrowser",
         "title": "Express: Host current workspace and open in browser"
+      },
+      {
+        "command": "express.hostWorkspaceWithRandomPort",
+        "title": "Express: Host current workspace with random port number"
+      },
+      {
+        "command": "express.hostWorkspaceWithRandomPortAndOpenInBrowser",
+        "title": "Express: Host current workspace with random port number and open in browser"
       },
       {
         "command": "express.openInBrowser",
@@ -62,6 +72,16 @@
           "type": "string",
           "default": null,
           "description": "Specifies the path to be hosted on Express, relative to the workspace root"
+        },
+        "express.randomPortNumber.min": {
+          "type": "number",
+          "default": 8000,
+          "description": "Specifies the minimum port number to use for random port number"
+        },
+        "express.randomPortNumber.max": {
+          "type": "number",
+          "default": 8999,
+          "description": "Specifies the maximum port number to use for random port number"
         }
       }
     }
