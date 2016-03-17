@@ -35,7 +35,11 @@ function activate(context) {
     }
 
     return server
-      .start(portNumber, path.resolve(wwwRoot, config.relativeRoot || '.'))
+      .start(
+        portNumber,
+        path.resolve(wwwRoot, config.relativeRoot || '.'),
+        typeof config.showOutput === 'boolean' ? config.showOutput : true
+      )
       .then(
         () => {
           !config.omitInformationMessage && vscode.window.showInformationMessage(`Express server is started and listening to port ${portNumber}`);
@@ -111,6 +115,10 @@ function activate(context) {
     } else {
       vscode.window.showErrorMessage('No Express server is running');
     }
+  }));
+
+  context.subscriptions.push(vscode.commands.registerCommand('express.showOutput', () => {
+    server.showOutputChannel();
   }));
 }
 

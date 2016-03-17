@@ -13,12 +13,13 @@ When Express is up and ready, an icon will show up in the status bar ![Status ba
 ## Commands
 | Command | Title |
 |---------|-------------|
-| `express.hostWorkspace(portNumber) ` | Express: Host current workspace |
-| `express.hostWorkspaceAndOpenInBrowser(portNumber) ` | Express: Host current workspace and open in browser |
-| `express.hostWorkspaceWithRandomPort ` | Express: Host current workspace with random port number |
-| `express.hostWorkspaceWithRandomPortAndOpenInBrowser ` | Express: Host current workspace with random port number and open in browser |
-| `express.openInBrowser` | Express: Open currently hosted website in browser |
-| `express.stopServer` | Express: Stop server |
+| `express.hostWorkspace(portNumber) ` | Express: Host Current Workspace |
+| `express.hostWorkspaceAndOpenInBrowser(portNumber) ` | Express: Host Current Workspace and Open in Browser |
+| `express.hostWorkspaceWithRandomPort ` | Express: Host Current Workspace with Random Port Number |
+| `express.hostWorkspaceWithRandomPortAndOpenInBrowser ` | Express: Host Current Workspace with Random Port Number and open in browser |
+| `express.openInBrowser` | Express: Open Currently Hosted Website in Browser |
+| `express.showOutput` | Express: Show Output |
+| `express.stopServer` | Express: Stop Server |
 
 ## Preferences
 
@@ -39,11 +40,16 @@ By default, the Express server is hosted on port 80. You can configure it to dif
 
 // Specifies the maximum port number to use for random port number
 "express.randomPortNumber.max": 8999,
+
+// Determines whether to show output on server start
+"express.showOutput": true,
 ```
 
 Tips: Settings can be shared across team when overridden by workspace settings and checked into source control.
 
 ## Change log
+* 0.0.3 (2016-03-16)
+  * Show every request in output when server start
 * 0.0.2 (2016-03-16)
   * Support both pre-configured or random port number
   * Call `vscode.commands.executeCommand('express.hostWorkspace', 8080)` to host on port 8080

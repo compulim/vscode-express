@@ -24,34 +24,39 @@
     "onCommand:express.hostWorkspaceWithRandomPort",
     "onCommand:express.hostWorkspaceWithRandomPortAndOpenInBrowser",
     "onCommand:express.openInBrowser",
-    "onCommand:express.stopServer"
+    "onCommand:express.stopServer",
+    "onCommand:express.showOutput"
   ],
   "main": "./extension",
   "contributes": {
     "commands": [
       {
         "command": "express.hostWorkspace",
-        "title": "Express: Host current workspace"
+        "title": "Express: Host Current Workspace"
       },
       {
         "command": "express.hostWorkspaceAndOpenInBrowser",
-        "title": "Express: Host current workspace and open in browser"
+        "title": "Express: Host Current Workspace and Open in Browser"
       },
       {
         "command": "express.hostWorkspaceWithRandomPort",
-        "title": "Express: Host current workspace with random port number"
+        "title": "Express: Host Current Workspace with Random Port Number"
       },
       {
         "command": "express.hostWorkspaceWithRandomPortAndOpenInBrowser",
-        "title": "Express: Host current workspace with random port number and open in browser"
+        "title": "Express: Host Current Workspace with Random Port Number and Open in Browser"
       },
       {
         "command": "express.openInBrowser",
-        "title": "Express: Open currently hosted website in browser"
+        "title": "Express: Open Currently Hosted Website in Browser"
       },
       {
         "command": "express.stopServer",
-        "title": "Express: Stop server"
+        "title": "Express: Stop Server"
+      },
+      {
+        "command": "express.showOutput",
+        "title": "Express: Show Output"
       }
     ],
     "configuration": {
@@ -82,6 +87,11 @@
           "type": "number",
           "default": 8999,
           "description": "Specifies the maximum port number to use for random port number"
+        },
+        "express.showOutput": {
+          "type": "boolean",
+          "default": true,
+          "description": "Determines whether to show output on server start"
         }
       }
     }
