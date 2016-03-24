@@ -15,6 +15,13 @@
   },
   "bugs": "https://github.com/compulim/vscode-express/issues/",
   "homepage": "https://github.com/compulim/vscode-express/blob/master/README.md",
+  "keywords": [
+    "express",
+    "expressjs",
+    "hosting",
+    "web",
+    "web server"
+  ],
   "categories": [
     "Other"
   ],
