@@ -48,6 +48,7 @@ By default, the Express server is hosted on port 80. You can configure it to dif
 Tips: Settings can be shared across team when overridden by workspace settings and checked into source control.
 
 ## Change log
+* 0.0.4 (2016-03-24): Update extension description
 * 0.0.3 (2016-03-16)
   * Show every request in output when server start
 * 0.0.2 (2016-03-16)

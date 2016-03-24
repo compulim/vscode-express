@@ -2,7 +2,7 @@
   "name": "vscode-express",
   "displayName": "Express",
   "description": "Hosts current workspace with Express web server",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "Compulim",
   "engines": {
     "vscode": "^0.10.1"
