@@ -1,5 +1,5 @@
 # Express
-Hosts your current workspace in Express with Visual Studio Code
+Hosts current workspace with Express web server in Visual Studio Code
 
 ![Demo showing how Express extension works](https://raw.githubusercontent.com/compulim/vscode-express/master/demo.gif)
 
