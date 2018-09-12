@@ -99,6 +99,11 @@
           "type": "boolean",
           "default": true,
           "description": "Determines whether to show output on server start"
+        },
+        "express.enableCors": {
+          "type": "boolean",
+          "default": false,
+          "description": "Determines whether to add CORS support"
         }
       }
     }
