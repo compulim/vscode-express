@@ -28,6 +28,7 @@ class ServerInstance {
 
         this._outputChannel.appendLine(`Server is starting to listen to port ${portNumber} and will serve ${wwwRoot}`);
 
+        require("./cors")(app);
         app.use(express.static(wwwRoot));
 
         this._server = http.createServer(app).listen(portNumber, () => {
